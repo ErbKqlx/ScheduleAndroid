@@ -9,12 +9,12 @@
         android:name="com.example.schedule.MainFragment"
         android:label="Главное меню" >
         <action
-            android:id="@+id/action_mainFragment_to_secondFragment"
-            app:destination="@id/secondFragment" />
+            android:id="@+id/action_mainFragment_to_teachersFragment"
+            app:destination="@id/teachersFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/secondFragment"
-        android:name="com.example.schedule.SecondFragment"
+        android:id="@+id/teachersFragment"
+        android:name="com.example.schedule.TeachersFragment"
         android:label="Таблица" />
 </navigation>

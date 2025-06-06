@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Secret Message"
+rootProject.name = "Schedule"
 include(":app")

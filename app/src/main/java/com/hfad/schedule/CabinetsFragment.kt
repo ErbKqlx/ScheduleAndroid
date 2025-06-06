@@ -1,4 +1,4 @@
-package com.hfad.secretmessage
+package com.hfad.schedule
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Secret Message</string>
+    <string name="app_name">Schedule</string>
     <string name="welcome_text">Нажмите на любую кнопку чтобы вывести таблицу-справочник
     </string>
     <string name="start">Start</string>

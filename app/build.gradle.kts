@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.hfad.secretmessage"
+    namespace = "com.hfad.schedule"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.hfad.secretmessage"
+        applicationId = "com.hfad.schedule"
         minSdk = 21
         targetSdk = 34
         versionCode = 1

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.hfad.secretmessage.WelcomeFragment"
+        android:name="com.hfad.schedule.WelcomeFragment"
         android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome" >
         <action
@@ -25,51 +25,38 @@
     </fragment>
     <fragment
         android:id="@+id/teachersFragment"
-        android:name="com.hfad.secretmessage.TeachersFragment"
+        android:name="com.hfad.schedule.TeachersFragment"
         android:label="fragment_teachers"
         tools:layout="@layout/fragment_teachers" >
         <action
-            android:id="@+id/action_teachersFragment_to_encryptFragment"
-            app:destination="@id/encryptFragment"
+            android:id="@+id/action_teachersFragment_to_welcomeFragment"
             app:popUpTo="@id/welcomeFragment" />
     </fragment>
     <fragment
         android:id="@+id/groupsFragment"
-        android:name="com.hfad.secretmessage.GroupsFragment"
+        android:name="com.hfad.schedule.GroupsFragment"
         android:label="fragment_groups"
         tools:layout="@layout/fragment_groups" >
         <action
-            android:id="@+id/action_groupsFragment_to_encryptFragment"
-            app:destination="@id/encryptFragment"
+            android:id="@+id/action_groupsFragment_to_welcomeFragment"
             app:popUpTo="@id/welcomeFragment" />
     </fragment>
     <fragment
         android:id="@+id/cabinetsFragment"
-        android:name="com.hfad.secretmessage.CabinetsFragment"
+        android:name="com.hfad.schedule.CabinetsFragment"
         android:label="fragment_cabinets"
         tools:layout="@layout/fragment_cabinets" >
         <action
-            android:id="@+id/action_cabinetsFragment_to_encryptFragment"
-            app:destination="@id/encryptFragment"
+            android:id="@+id/action_cabinetsFragment_to_welcomeFragment"
             app:popUpTo="@id/welcomeFragment" />
     </fragment>
     <fragment
         android:id="@+id/disciplinesFragment"
-        android:name="com.hfad.secretmessage.DisciplinesFragment"
+        android:name="com.hfad.schedule.DisciplinesFragment"
         android:label="fragment_disciplines"
         tools:layout="@layout/fragment_disciplines" >
         <action
-            android:id="@+id/action_disciplinesFragment_to_encryptFragment"
-            app:destination="@id/encryptFragment"
+            android:id="@+id/action_disciplinesFragment_to_welcomeFragment"
             app:popUpTo="@id/welcomeFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/encryptFragment"
-        android:name="com.hfad.secretmessage.EncryptFragment"
-        android:label="fragment_encrypt"
-        tools:layout="@layout/fragment_encrypt" >
-        <argument
-            android:name="message"
-            app:argType="string" />
     </fragment>
 </navigation>

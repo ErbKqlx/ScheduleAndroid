@@ -11,16 +11,55 @@
         android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome" >
         <action
-            android:id="@+id/action_welcomeFragment_to_messageFragment"
-            app:destination="@id/messageFragment" />
+            android:id="@+id/action_welcomeFragment_to_teachersFragment"
+            app:destination="@id/teachersFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_groupsFragment"
+            app:destination="@id/groupsFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_cabinetsFragment"
+            app:destination="@id/cabinetsFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_disciplinesFragment"
+            app:destination="@id/disciplinesFragment" />
     </fragment>
     <fragment
-        android:id="@+id/messageFragment"
+        android:id="@+id/teachersFragment"
         android:name="com.hfad.secretmessage.TeachersFragment"
-        android:label="fragment_message"
+        android:label="fragment_teachers"
         tools:layout="@layout/fragment_teachers" >
         <action
-            android:id="@+id/action_messageFragment_to_encryptFragment"
+            android:id="@+id/action_teachersFragment_to_encryptFragment"
+            app:destination="@id/encryptFragment"
+            app:popUpTo="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupsFragment"
+        android:name="com.hfad.secretmessage.GroupsFragment"
+        android:label="fragment_groups"
+        tools:layout="@layout/fragment_groups" >
+        <action
+            android:id="@+id/action_groupsFragment_to_encryptFragment"
+            app:destination="@id/encryptFragment"
+            app:popUpTo="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cabinetsFragment"
+        android:name="com.hfad.secretmessage.CabinetsFragment"
+        android:label="fragment_cabinets"
+        tools:layout="@layout/fragment_cabinets" >
+        <action
+            android:id="@+id/action_cabinetsFragment_to_encryptFragment"
+            app:destination="@id/encryptFragment"
+            app:popUpTo="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/disciplinesFragment"
+        android:name="com.hfad.secretmessage.DisciplinesFragment"
+        android:label="fragment_disciplines"
+        tools:layout="@layout/fragment_disciplines" >
+        <action
+            android:id="@+id/action_disciplinesFragment_to_encryptFragment"
             app:destination="@id/encryptFragment"
             app:popUpTo="@id/welcomeFragment" />
     </fragment>

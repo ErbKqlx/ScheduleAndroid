@@ -32,7 +32,6 @@ class TeachersFragment : Fragment() {
                 text = header
                 setPadding(8, 8, 8, 8)
                 setTypeface(null, android.graphics.Typeface.BOLD)
-                //setBackgroundColor(Color.LTGRAY)
                 setBackgroundResource(R.drawable.table_cell_border)
             }
             headerRow.addView(tv)
@@ -119,7 +118,6 @@ class TeachersFragment : Fragment() {
                 val tv = TextView(requireContext()).apply {
                     text = cellData
                     setPadding(8, 8, 8, 8)
-                    //setBackgroundColor(Color.WHITE)
                     setBackgroundResource(R.drawable.table_cell_border)
                 }
                 row.addView(tv)

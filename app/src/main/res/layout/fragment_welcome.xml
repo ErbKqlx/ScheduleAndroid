@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_horizontal"
+    android:gravity="center"
     tools:context=".WelcomeFragment">
 
     <TextView
@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
         android:textSize="20sp"
         android:text="@string/welcome_text" />
 
@@ -19,5 +20,23 @@
         android:id="@+id/button_show_teachers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Показать преподавателей" />
+        android:text="Посмотреть преподавателей" />
+
+    <Button
+        android:id="@+id/button_show_groups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Посмотреть группы" />
+
+    <Button
+        android:id="@+id/button_show_cabinets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Посмотреть кабинеты" />
+
+    <Button
+        android:id="@+id/button_show_disciplines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Посмотреть дисциплины" />
 </LinearLayout>
